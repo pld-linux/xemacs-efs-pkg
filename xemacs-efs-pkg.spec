@@ -2,7 +2,7 @@ Summary:	Treat files on remote systems the same as local files
 Summary(pl):	Treat files on remote systems the same as local files
 Name:		xemacs-efs-pkg
 %define 	srcname	efs
-Version:	1.22
+Version:	1.26
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
