@@ -2,7 +2,7 @@ Summary:	Treat files on remote systems the same as local files
 Summary(pl):	Traktowanie plików na zdalnych systemach jako lokalne
 Name:		xemacs-efs-pkg
 %define 	srcname	efs
-Version:	1.28
+Version:	1.29
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
@@ -62,8 +62,6 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/efs/ChangeLog
-
 # remove .el file if corresponding .elc file exists
 find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
 
@@ -78,7 +76,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/efs/ChangeLog.gz
+%doc lisp/efs/ChangeLog
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
