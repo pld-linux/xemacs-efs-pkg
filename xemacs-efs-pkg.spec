@@ -6,9 +6,10 @@ Version:	1.26
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-Patch0:		xemacs-efs-pkg-info.patch
+Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
@@ -19,8 +20,19 @@ Requires:	xemacs-dired-pkg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-
-%description -l pl 
+EFS is a system for transparent file-transfer between remote VMS, CMS,
+MTS, MVS, Twenex, Explorer (the last two are Lisp machines), TOPS-20,
+DOS (running the Distinct, Novell, FTP software, NCSA, Microsoft in
+both unix and DOS mode, Super TCP, and Hellsoft FTP servers), Windows
+NT (running the Microsoft or Hummingbird ftp servers), Unix
+descriptive listings (dl), KA9Q, OS/2 hosts using FTP. This means that
+you can edit, copy and otherwise manipulate files on any machine you
+have access to from within Emacs as if it were a local file. EFS works
+by introducing an extended filename syntax, and overloading functions
+such as `insert-file-contents' so that accessing a remote file causes
+appropriate commands to be sent to an FTP process. EFS includes and
+enhanced version of Dired to facilitate directory browsing and
+multiple file transfer from remote hosts.
 
 %prep
 %setup -q -c
