@@ -1,0 +1,25 @@
+diff -Nur xemacs-efs-pkg-1.16/man/efs/efs.texi xemacs-efs-pkg-1.16.new/man/efs/efs.texi
+--- xemacs-efs-pkg-1.16/man/efs/efs.texi	Mon Aug 24 03:44:43 1998
++++ xemacs-efs-pkg-1.16.new/man/efs/efs.texi	Sun Mar 26 14:51:32 2000
+@@ -1,12 +1,19 @@
+ \input texinfo   @c -*-texinfo-*-
+ @comment %**start of header (This is for running Texinfo on a region.)
+-@setfilename efs.info
++@setfilename ../../info/efs.info
+ @settitle EFS
+ @comment %**end of header (This is for running Texinfo on a region.)
+ 
++
++@ifinfo
++@format
++@dircategory XEmacs Editor:
+ @direntry
+-* EFS::		Transparent remote file access via FTP.
++* EFS: (efs).           		Transparent remote file access via FTP.
+ @end direntry
++@end format
++@end ifinfo
++
+ 
+ @synindex fn vr
+ 
