@@ -23,7 +23,7 @@ EFS is a system for transparent file-transfer between remote VMS, CMS,
 MTS, MVS, Twenex, Explorer (the last two are Lisp machines), TOPS-20,
 DOS (running the Distinct, Novell, FTP software, NCSA, Microsoft in
 both unix and DOS mode, Super TCP, and Hellsoft FTP servers), Windows
-NT (running the Microsoft or Hummingbird ftp servers), Unix
+NT (running the Microsoft or Hummingbird FTP servers), Unix
 descriptive listings (dl), KA9Q, OS/2 hosts using FTP. This means that
 you can edit, copy and otherwise manipulate files on any machine you
 have access to from within Emacs as if it were a local file. EFS works
