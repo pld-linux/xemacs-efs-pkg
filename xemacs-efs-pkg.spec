@@ -1,5 +1,5 @@
 Summary:	Treat files on remote systems the same as local files
-Summary(pl):	Treat files on remote systems the same as local files
+Summary(pl):	Traktowanie plików na zdalnych systemach jako lokalne
 Name:		xemacs-efs-pkg
 %define 	srcname	efs
 Version:	1.26
@@ -34,6 +34,21 @@ appropriate commands to be sent to an FTP process. EFS includes and
 enhanced version of Dired to facilitate directory browsing and
 multiple file transfer from remote hosts.
 
+%description -l pl
+EFS jest systemem przezroczystego transferu plików pomiêdzy zdalnym
+VMS, CMS, MTS, MVS, Twenex, Explorer (przynajmniej dwa s± maszynami
+lispowymi), TOPS-20, DOS (z dzia³aj±cym Distinct, Novell, FTP, NCSA,
+Microsoft w trybie Unix lub DOS, Super TCP, Hellsoft FTP), Windows NT
+(z serwerem FTP Microsoftu lub Hummingbird), Unix descriptive listings
+(dl), KA9Q, OS/2 z u¿yciem FTP. To znaczy, ¿e mo¿esz modyfikowaæ,
+kopiowaæ i w inny sposób manipulowaæ plikami na dowolnej maszynie do
+której masz dostêp ze swojego Emacsa tak, jakby by³y to lokalne pliki.
+EFS dzia³a przez rozszerzon± sk³adniê nazw plików i przeci±¿enie
+funkcji typu "insert-file-contents" , wiêc dostêp do pliku zdalnego
+powoduje wys³anie odpowiednich komend do procesu FTP. EFS zawiera
+rozszerzon± wersjê Dired, aby u³atwiæ przegl±danie katalogów i
+¶ci±ganie wielu plików ze zdalnych maszyn.
+
 %prep
 %setup -q -c
 %patch0 -p1
@@ -49,8 +64,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
-	lisp/efs/ChangeLog 
+gzip -9nf lisp/efs/ChangeLog 
 
 %clean
 rm -fr $RPM_BUILD_ROOT
