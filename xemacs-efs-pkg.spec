@@ -54,7 +54,8 @@ rozszerzon± wersjê Dired, aby u³atwiæ przegl±danie katalogów i
 %patch0 -p1
 
 %build
-(cd man/efs; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
+cd man/efs
+awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo
 
 %install
 rm -rf $RPM_BUILD_ROOT
