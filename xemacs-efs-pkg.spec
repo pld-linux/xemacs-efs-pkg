@@ -1,5 +1,5 @@
 Summary:	Treat files on remote systems the same as local files
-Summary(pl):	Traktowanie plików na zdalnych systemach jako lokalne
+Summary(pl.UTF-8):   Traktowanie plikÃ³w na zdalnych systemach jako lokalne
 Name:		xemacs-efs-pkg
 %define 	srcname	efs
 Version:	1.32
@@ -34,20 +34,20 @@ appropriate commands to be sent to an FTP process. EFS includes and
 enhanced version of Dired to facilitate directory browsing and
 multiple file transfer from remote hosts.
 
-%description -l pl
-EFS jest systemem przezroczystego transferu plików pomiêdzy zdalnym
-VMS, CMS, MTS, MVS, Twenex, Explorer (przynajmniej dwa s± maszynami
-lispowymi), TOPS-20, DOS (z dzia³aj±cym Distinct, Novell, FTP, NCSA,
+%description -l pl.UTF-8
+EFS jest systemem przezroczystego transferu plikÃ³w pomiÄ™dzy zdalnym
+VMS, CMS, MTS, MVS, Twenex, Explorer (przynajmniej dwa sÄ… maszynami
+lispowymi), TOPS-20, DOS (z dziaÅ‚ajÄ…cym Distinct, Novell, FTP, NCSA,
 Microsoft w trybie Unix lub DOS, Super TCP, Hellsoft FTP), Windows NT
 (z serwerem FTP Microsoftu lub Hummingbird), Unix descriptive listings
-(dl), KA9Q, OS/2 z u¿yciem FTP. To znaczy, ¿e mo¿esz modyfikowaæ,
-kopiowaæ i w inny sposób manipulowaæ plikami na dowolnej maszynie do
-której masz dostêp ze swojego Emacsa tak, jakby by³y to lokalne pliki.
-EFS dzia³a przez rozszerzon± sk³adniê nazw plików i przeci±¿enie
-funkcji typu "insert-file-contents" , wiêc dostêp do pliku zdalnego
-powoduje wys³anie odpowiednich komend do procesu FTP. EFS zawiera
-rozszerzon± wersjê Dired, aby u³atwiæ przegl±danie katalogów i
-¶ci±ganie wielu plików ze zdalnych maszyn.
+(dl), KA9Q, OS/2 z uÅ¼yciem FTP. To znaczy, Å¼e moÅ¼esz modyfikowaÄ‡,
+kopiowaÄ‡ i w inny sposÃ³b manipulowaÄ‡ plikami na dowolnej maszynie do
+ktÃ³rej masz dostÄ™p ze swojego Emacsa tak, jakby byÅ‚y to lokalne pliki.
+EFS dziaÅ‚a przez rozszerzonÄ… skÅ‚adniÄ™ nazw plikÃ³w i przeciÄ…Å¼enie
+funkcji typu "insert-file-contents" , wiÄ™c dostÄ™p do pliku zdalnego
+powoduje wysÅ‚anie odpowiednich komend do procesu FTP. EFS zawiera
+rozszerzonÄ… wersjÄ™ Dired, aby uÅ‚atwiÄ‡ przeglÄ…danie katalogÃ³w i
+Å›ciÄ…ganie wielu plikÃ³w ze zdalnych maszyn.
 
 %prep
 %setup -q -c
