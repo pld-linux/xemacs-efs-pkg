@@ -1,5 +1,5 @@
 Summary:	Treat files on remote systems the same as local files
-Summary(pl.UTF-8):   Traktowanie plików na zdalnych systemach jako lokalne
+Summary(pl.UTF-8):	Traktowanie plików na zdalnych systemach jako lokalne
 Name:		xemacs-efs-pkg
 %define 	srcname	efs
 Version:	1.32
