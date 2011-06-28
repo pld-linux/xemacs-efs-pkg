@@ -2,12 +2,12 @@ Summary:	Treat files on remote systems the same as local files
 Summary(pl.UTF-8):	Traktowanie plików na zdalnych systemach jako lokalne
 Name:		xemacs-efs-pkg
 %define 	srcname	efs
-Version:	1.32
-Release:	2
+Version:	1.34
+Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	6123c11bc7a9c993429e9976f7bf42c4
+# Source0-md5:	1f424efc4a55b8da53a7d01136793c9d
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildRequires:	texinfo
